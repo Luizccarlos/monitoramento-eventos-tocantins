@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1367d1bdba2dd1c5f9afebd10d04f44e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1367d1bdba2dd1c5f9afebd10d04f44e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1367d1bdba2dd1c5f9afebd10d04f44e = L.map(
+                "map_1367d1bdba2dd1c5f9afebd10d04f44e",
+                {
+                    center: [-10.25, -48.25],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_1367d1bdba2dd1c5f9afebd10d04f44e);
+
+            
+
+        
+    
+            var tile_layer_3e6b5336d500fbe4bea50d7a8c23cd99 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e6b5336d500fbe4bea50d7a8c23cd99.addTo(map_1367d1bdba2dd1c5f9afebd10d04f44e);
+        
+    
+            var tile_layer_671feff0cb362c5c5bf3c06dc57a0320 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_a61cc6d97b961ad22740fb9a629489ba = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_97ac914bcf12d0ff05b29e4d87333e20 = L.marker(
+                [-11.298844, -47.9013],
+                {
+}
+            ).addTo(marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6);
+        
+    
+        var popup_7f41631956d2a7646f3de30aa56d530c = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_00a718f6ed22d1eaca911e8b514191c1 = $(`<div id="html_00a718f6ed22d1eaca911e8b514191c1" style="width: 100.0%; height: 100.0%;">     <b>Rompimento de barragem</b><br>     <b>Município:</b> Santa Rosa do Tocantins<br>     <b>Local:</b> Distrito de Cangas<br>     <b>Data:</b> 2026-03-02<br>     <b>Severidade:</b> Alta<br>     <b>Descrição:</b> Rompimento de pequena barragem.<br>     <b>ID:</b> EVT-001     </div>`)[0];
+                popup_7f41631956d2a7646f3de30aa56d530c.setContent(html_00a718f6ed22d1eaca911e8b514191c1);
+            
+        
+
+        marker_97ac914bcf12d0ff05b29e4d87333e20.bindPopup(popup_7f41631956d2a7646f3de30aa56d530c)
+        ;
+
+        
+    
+    
+            marker_97ac914bcf12d0ff05b29e4d87333e20.bindTooltip(
+                `<div>
+                     Rompimento de barragem — Santa Rosa do Tocantins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_84609be6ff807534ed03ea69d438337e = L.marker(
+                [-11.3253, -47.912],
+                {
+}
+            ).addTo(marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6);
+        
+    
+        var popup_cdc1a816256cd4da5d2ee8f7eedcf1ce = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_27add4e29689f649727b3c63f5a7f746 = $(`<div id="html_27add4e29689f649727b3c63f5a7f746" style="width: 100.0%; height: 100.0%;">     <b>Colapso de ponte</b><br>     <b>Município:</b> Santa Rosa do Tocantins<br>     <b>Local:</b> Ponte (localidade a confirmar)<br>     <b>Data:</b> 2026-03-02<br>     <b>Severidade:</b> Alta<br>     <b>Descrição:</b> Colapso estrutural associado às chuvas intensas.<br>     <b>ID:</b> EVT-002     </div>`)[0];
+                popup_cdc1a816256cd4da5d2ee8f7eedcf1ce.setContent(html_27add4e29689f649727b3c63f5a7f746);
+            
+        
+
+        marker_84609be6ff807534ed03ea69d438337e.bindPopup(popup_cdc1a816256cd4da5d2ee8f7eedcf1ce)
+        ;
+
+        
+    
+    
+            marker_84609be6ff807534ed03ea69d438337e.bindTooltip(
+                `<div>
+                     Colapso de ponte — Santa Rosa do Tocantins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2b8edeba44982eefcda88bdab31a8159 = L.marker(
+                [-6.5273, -48.449315],
+                {
+}
+            ).addTo(marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6);
+        
+    
+        var popup_82149897513b6c3691cc9d3cb1807af4 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_3823c9ee9636dd26f56a7a302fc8e28e = $(`<div id="html_3823c9ee9636dd26f56a7a302fc8e28e" style="width: 100.0%; height: 100.0%;">     <b>Enchente</b><br>     <b>Município:</b> Xambioá<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-02-27<br>     <b>Severidade:</b> None<br>     <b>Descrição:</b> Elevação do nível do corpo hídrico.<br>     <b>ID:</b> EVT-003     </div>`)[0];
+                popup_82149897513b6c3691cc9d3cb1807af4.setContent(html_3823c9ee9636dd26f56a7a302fc8e28e);
+            
+        
+
+        marker_2b8edeba44982eefcda88bdab31a8159.bindPopup(popup_82149897513b6c3691cc9d3cb1807af4)
+        ;
+
+        
+    
+    
+            marker_2b8edeba44982eefcda88bdab31a8159.bindTooltip(
+                `<div>
+                     Enchente — Xambioá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_71ce6d2e4f38dd471f77941248cf6ede = L.marker(
+                [-6.527293, -48.449345],
+                {
+}
+            ).addTo(marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6);
+        
+    
+        var popup_f57ee84dd5863e89d4852f4bb508a850 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_19b90f2864ecf004a9c8e61ceb3bc3d8 = $(`<div id="html_19b90f2864ecf004a9c8e61ceb3bc3d8" style="width: 100.0%; height: 100.0%;">     <b>Enchente</b><br>     <b>Município:</b> Xambioá<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-02-27<br>     <b>Severidade:</b> None<br>     <b>Descrição:</b> Elevação do nível do corpo hídrico.<br>     <b>ID:</b> EVT-004     </div>`)[0];
+                popup_f57ee84dd5863e89d4852f4bb508a850.setContent(html_19b90f2864ecf004a9c8e61ceb3bc3d8);
+            
+        
+
+        marker_71ce6d2e4f38dd471f77941248cf6ede.bindPopup(popup_f57ee84dd5863e89d4852f4bb508a850)
+        ;
+
+        
+    
+    
+            marker_71ce6d2e4f38dd471f77941248cf6ede.bindTooltip(
+                `<div>
+                     Enchente — Xambioá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5be647b94925746fe2628072357e2b04 = L.marker(
+                [-5.88167395, -47.45884546],
+                {
+}
+            ).addTo(marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6);
+        
+    
+        var popup_fcf9a4960b7652efcf8bf26f5f74604d = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_0e39fa3370c9bf65b55aa7026a7f2f23 = $(`<div id="html_0e39fa3370c9bf65b55aa7026a7f2f23" style="width: 100.0%; height: 100.0%;">     <b>Alagamento</b><br>     <b>Município:</b> Maurilândia<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-03-04<br>     <b>Severidade:</b> None<br>     <b>Descrição:</b> Residência atingida.<br>     <b>ID:</b> EVT-004     </div>`)[0];
+                popup_fcf9a4960b7652efcf8bf26f5f74604d.setContent(html_0e39fa3370c9bf65b55aa7026a7f2f23);
+            
+        
+
+        marker_5be647b94925746fe2628072357e2b04.bindPopup(popup_fcf9a4960b7652efcf8bf26f5f74604d)
+        ;
+
+        
+    
+    
+            marker_5be647b94925746fe2628072357e2b04.bindTooltip(
+                `<div>
+                     Alagamento — Maurilândia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6.addTo(map_1367d1bdba2dd1c5f9afebd10d04f44e);
+        
+    
+            map_1367d1bdba2dd1c5f9afebd10d04f44e.fitBounds(
+                [[-11.3253, -48.449345], [-5.88167395, -47.45884546]],
+                {}
+            );
+        
+    
+            var layer_control_a59334acdc5094d8258a0b2275a800dc_layers = {
+                base_layers : {
+                    "Ruas (OSM)" : tile_layer_3e6b5336d500fbe4bea50d7a8c23cd99,
+                    "Claro (Carto)" : tile_layer_671feff0cb362c5c5bf3c06dc57a0320,
+                    "Sat\u00e9lite (Esri)" : tile_layer_a61cc6d97b961ad22740fb9a629489ba,
+                },
+                overlays :  {
+                    "Eventos" : marker_cluster_d05baf1cc03cadf39ecc2cca0c543dc6,
+                },
+            };
+            let layer_control_a59334acdc5094d8258a0b2275a800dc = L.control.layers(
+                layer_control_a59334acdc5094d8258a0b2275a800dc_layers.base_layers,
+                layer_control_a59334acdc5094d8258a0b2275a800dc_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_1367d1bdba2dd1c5f9afebd10d04f44e);
+
+        
+</script>
+</html>
