@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8b1137c9144ceb710d32b7f7b7d649b0 {
+                #map_bbb70994bf9b39701b44bc45efec8214 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -57,14 +57,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_8b1137c9144ceb710d32b7f7b7d649b0" ></div>
+            <div class="folium-map" id="map_bbb70994bf9b39701b44bc45efec8214" ></div>
         
 </body>
 <script>
     
     
-            var map_8b1137c9144ceb710d32b7f7b7d649b0 = L.map(
-                "map_8b1137c9144ceb710d32b7f7b7d649b0",
+            var map_bbb70994bf9b39701b44bc45efec8214 = L.map(
+                "map_bbb70994bf9b39701b44bc45efec8214",
                 {
                     center: [-10.25, -48.25],
                     crs: L.CRS.EPSG3857,
@@ -76,13 +76,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_8b1137c9144ceb710d32b7f7b7d649b0);
+            L.control.scale().addTo(map_bbb70994bf9b39701b44bc45efec8214);
 
             
 
         
     
-            var tile_layer_8ed3511b0cb6265c2d9814864662397b = L.tileLayer(
+            var tile_layer_ee665622990a5530d1b55b0759864556 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -99,10 +99,10 @@
             );
         
     
-            tile_layer_8ed3511b0cb6265c2d9814864662397b.addTo(map_8b1137c9144ceb710d32b7f7b7d649b0);
+            tile_layer_ee665622990a5530d1b55b0759864556.addTo(map_bbb70994bf9b39701b44bc45efec8214);
         
     
-            var tile_layer_5af45f43bf7506a6b26839bdc2f4da3a = L.tileLayer(
+            var tile_layer_a5741ac2f49192a3cea9534ba3596575 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -119,7 +119,7 @@
             );
         
     
-            var tile_layer_3f44f82f77044c3e2a788b36140af0b7 = L.tileLayer(
+            var tile_layer_f301efa8b03366a1f0beffb86625ab1f = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
@@ -136,39 +136,50 @@
             );
         
     
-            var marker_cluster_c8240a3e40f73b4e3369b04677874bcf = L.markerClusterGroup(
+            var marker_cluster_626974411da9597567c8edc0089e8dc8 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_1e2d313069cce26e83f0ecfd1657e7fb = L.marker(
+            var marker_faee3b72f99f6abc6cd1013405f23a71 = L.marker(
                 [-11.298844, -47.9013],
                 {
 }
-            ).addTo(marker_cluster_c8240a3e40f73b4e3369b04677874bcf);
+            ).addTo(marker_cluster_626974411da9597567c8edc0089e8dc8);
         
     
-        var popup_1d794d6a225c4393742fb1bfdfec9b36 = L.popup({
+            var icon_1dad23b7cce0fc3fae9c22f37a0a8291 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1989d17b9e1e083cde26cd5fbcc875bf = L.popup({
   "maxWidth": 450,
 });
 
         
             
-                var html_c8f60f9022ae865d6dab7ad2a01d4c8f = $(`<div id="html_c8f60f9022ae865d6dab7ad2a01d4c8f" style="width: 100.0%; height: 100.0%;">     <b>Rompimento de Barragem</b><br>     <b>Município:</b> Santa Rosa do Tocantins<br>     <b>Local:</b> Distrito de Cangas<br>     <b>Data:</b> 2026-03-02<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>           <b>Descrição:</b> Rompimento de pequena barragem.<br>     <b>Situação atual:</b> Normalizado<br>     <b>ID:</b> EVT-001     </div>`)[0];
-                popup_1d794d6a225c4393742fb1bfdfec9b36.setContent(html_c8f60f9022ae865d6dab7ad2a01d4c8f);
+                var html_3ef5a9a3b55f1831b893c75a9304e0aa = $(`<div id="html_3ef5a9a3b55f1831b893c75a9304e0aa" style="width: 100.0%; height: 100.0%;">     <b>Rompimento de Barragem</b><br>     <b>Município:</b> Santa Rosa do Tocantins<br>     <b>Local:</b> Distrito de Cangas<br>     <b>Data:</b> 2026-03-02<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>     <b>Descrição:</b> Rompimento de pequena barragem.<br>     <b>Situação atual:</b> Normalizado<br>     <b>ID:</b> EVT-001     </div>`)[0];
+                popup_1989d17b9e1e083cde26cd5fbcc875bf.setContent(html_3ef5a9a3b55f1831b893c75a9304e0aa);
             
         
 
-        marker_1e2d313069cce26e83f0ecfd1657e7fb.bindPopup(popup_1d794d6a225c4393742fb1bfdfec9b36)
+        marker_faee3b72f99f6abc6cd1013405f23a71.bindPopup(popup_1989d17b9e1e083cde26cd5fbcc875bf)
         ;
 
         
     
     
-            marker_1e2d313069cce26e83f0ecfd1657e7fb.bindTooltip(
+            marker_faee3b72f99f6abc6cd1013405f23a71.bindTooltip(
                 `<div>
-                     Rompimento de Barragem — Santa Rosa do Tocantins
+                     Rompimento de Barragem — Santa Rosa do Tocantins (Normalizado)
                  </div>`,
                 {
   "sticky": true,
@@ -176,33 +187,47 @@
             );
         
     
-            var marker_a83f4a0601da69d80ab93ad7b3f8ef76 = L.marker(
+                marker_faee3b72f99f6abc6cd1013405f23a71.setIcon(icon_1dad23b7cce0fc3fae9c22f37a0a8291);
+            
+    
+            var marker_308beaadeea2e64f537b669eb9d09c3d = L.marker(
                 [-11.3253, -47.912],
                 {
 }
-            ).addTo(marker_cluster_c8240a3e40f73b4e3369b04677874bcf);
+            ).addTo(marker_cluster_626974411da9597567c8edc0089e8dc8);
         
     
-        var popup_db00a9fce32144e451d8141163685ca9 = L.popup({
+            var icon_6f547322579379936b9ba67082499cdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fe5e3bdd8cad067bf225163b4033e6c = L.popup({
   "maxWidth": 450,
 });
 
         
             
-                var html_8c339a8a451d4abd38f6e7cb7499a5db = $(`<div id="html_8c339a8a451d4abd38f6e7cb7499a5db" style="width: 100.0%; height: 100.0%;">     <b>Colapso de ponte</b><br>     <b>Município:</b> Santa Rosa do Tocantins<br>     <b>Local:</b> Ponte sobre o Ribeirão Taquari<br>     <b>Data:</b> 2026-03-02<br>     <b>Severidade:</b> Alta<br>     <b>Rio:</b> Ribeirão Taquari<br>           <b>Descrição:</b> Colapso estrutural associado às chuvas intensas.<br>     <b>Situação atual:</b> Normalizado<br>     <b>ID:</b> EVT-002     </div>`)[0];
-                popup_db00a9fce32144e451d8141163685ca9.setContent(html_8c339a8a451d4abd38f6e7cb7499a5db);
+                var html_0ae4282021d52645a418c39bddf13156 = $(`<div id="html_0ae4282021d52645a418c39bddf13156" style="width: 100.0%; height: 100.0%;">     <b>Colapso de ponte</b><br>     <b>Município:</b> Santa Rosa do Tocantins<br>     <b>Local:</b> Ponte sobre o Ribeirão Taquari<br>     <b>Data:</b> 2026-03-02<br>     <b>Severidade:</b> Alta<br>     <b>Rio:</b> Ribeirão Taquari<br>     <b>Descrição:</b> Colapso estrutural associado às chuvas intensas.<br>     <b>Situação atual:</b> Normalizado<br>     <b>ID:</b> EVT-002     </div>`)[0];
+                popup_1fe5e3bdd8cad067bf225163b4033e6c.setContent(html_0ae4282021d52645a418c39bddf13156);
             
         
 
-        marker_a83f4a0601da69d80ab93ad7b3f8ef76.bindPopup(popup_db00a9fce32144e451d8141163685ca9)
+        marker_308beaadeea2e64f537b669eb9d09c3d.bindPopup(popup_1fe5e3bdd8cad067bf225163b4033e6c)
         ;
 
         
     
     
-            marker_a83f4a0601da69d80ab93ad7b3f8ef76.bindTooltip(
+            marker_308beaadeea2e64f537b669eb9d09c3d.bindTooltip(
                 `<div>
-                     Colapso de ponte — Santa Rosa do Tocantins
+                     Colapso de ponte — Santa Rosa do Tocantins (Normalizado)
                  </div>`,
                 {
   "sticky": true,
@@ -210,33 +235,47 @@
             );
         
     
-            var marker_a87b4428dfbde160b68f88b1089484dc = L.marker(
+                marker_308beaadeea2e64f537b669eb9d09c3d.setIcon(icon_6f547322579379936b9ba67082499cdc);
+            
+    
+            var marker_82a143aa4f800d8e907eb0c6a05ea17b = L.marker(
                 [-6.5273, -48.449315],
                 {
 }
-            ).addTo(marker_cluster_c8240a3e40f73b4e3369b04677874bcf);
+            ).addTo(marker_cluster_626974411da9597567c8edc0089e8dc8);
         
     
-        var popup_668eb8543ce8c5e1894e0a868ab21ff1 = L.popup({
+            var icon_bda2c224c1e4a3b30755cb1172df17cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_beffa8903b2d2c42a8ee590d643771c2 = L.popup({
   "maxWidth": 450,
 });
 
         
             
-                var html_fa2ad841df3e072648e2240d0a6f330e = $(`<div id="html_fa2ad841df3e072648e2240d0a6f330e" style="width: 100.0%; height: 100.0%;">     <b>Enchente</b><br>     <b>Município:</b> Xambioá<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-02-27<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>           <b>Descrição:</b> Elevação do nível do corpo hídrico.<br>     <b>Situação atual:</b> Permanece em estado de alerta hidrológico<br>     <b>ID:</b> EVT-003     </div>`)[0];
-                popup_668eb8543ce8c5e1894e0a868ab21ff1.setContent(html_fa2ad841df3e072648e2240d0a6f330e);
+                var html_5682d1299e3f00e2cc32f965b38d5531 = $(`<div id="html_5682d1299e3f00e2cc32f965b38d5531" style="width: 100.0%; height: 100.0%;">     <b>Enchente</b><br>     <b>Município:</b> Xambioá<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-02-27<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>     <b>Descrição:</b> Elevação do nível do corpo hídrico.<br>     <b>Situação atual:</b> Em atenção<br>     <b>ID:</b> EVT-003     </div>`)[0];
+                popup_beffa8903b2d2c42a8ee590d643771c2.setContent(html_5682d1299e3f00e2cc32f965b38d5531);
             
         
 
-        marker_a87b4428dfbde160b68f88b1089484dc.bindPopup(popup_668eb8543ce8c5e1894e0a868ab21ff1)
+        marker_82a143aa4f800d8e907eb0c6a05ea17b.bindPopup(popup_beffa8903b2d2c42a8ee590d643771c2)
         ;
 
         
     
     
-            marker_a87b4428dfbde160b68f88b1089484dc.bindTooltip(
+            marker_82a143aa4f800d8e907eb0c6a05ea17b.bindTooltip(
                 `<div>
-                     Enchente — Xambioá
+                     Enchente — Xambioá (Em atenção)
                  </div>`,
                 {
   "sticky": true,
@@ -244,33 +283,47 @@
             );
         
     
-            var marker_7b9a3a0e26c3023c5e87a136df773874 = L.marker(
+                marker_82a143aa4f800d8e907eb0c6a05ea17b.setIcon(icon_bda2c224c1e4a3b30755cb1172df17cc);
+            
+    
+            var marker_99e12a2a91dec800a66da415fe21f74c = L.marker(
                 [-6.527293, -48.449345],
                 {
 }
-            ).addTo(marker_cluster_c8240a3e40f73b4e3369b04677874bcf);
+            ).addTo(marker_cluster_626974411da9597567c8edc0089e8dc8);
         
     
-        var popup_af0821f0be42c2e1100290c7ff938485 = L.popup({
+            var icon_9754f7dd54b9e7928cc215aa5da3a271 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e62207301d933f8bc78bcce3c3dd79d3 = L.popup({
   "maxWidth": 450,
 });
 
         
             
-                var html_332667b5cde4dad56b2961042820f7a8 = $(`<div id="html_332667b5cde4dad56b2961042820f7a8" style="width: 100.0%; height: 100.0%;">     <b>Enchente</b><br>     <b>Município:</b> Xambioá<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-02-27<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>           <b>Descrição:</b> Elevação do nível do corpo hídrico.<br>     <b>Situação atual:</b> Permanece em estado de alerta hidrológico<br>     <b>ID:</b> EVT-004     </div>`)[0];
-                popup_af0821f0be42c2e1100290c7ff938485.setContent(html_332667b5cde4dad56b2961042820f7a8);
+                var html_5910cb65332dd19f812b112567cca6c2 = $(`<div id="html_5910cb65332dd19f812b112567cca6c2" style="width: 100.0%; height: 100.0%;">     <b>Enchente</b><br>     <b>Município:</b> Xambioá<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-02-27<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>     <b>Descrição:</b> Elevação do nível do corpo hídrico.<br>     <b>Situação atual:</b> Em atenção<br>     <b>ID:</b> EVT-004     </div>`)[0];
+                popup_e62207301d933f8bc78bcce3c3dd79d3.setContent(html_5910cb65332dd19f812b112567cca6c2);
             
         
 
-        marker_7b9a3a0e26c3023c5e87a136df773874.bindPopup(popup_af0821f0be42c2e1100290c7ff938485)
+        marker_99e12a2a91dec800a66da415fe21f74c.bindPopup(popup_e62207301d933f8bc78bcce3c3dd79d3)
         ;
 
         
     
     
-            marker_7b9a3a0e26c3023c5e87a136df773874.bindTooltip(
+            marker_99e12a2a91dec800a66da415fe21f74c.bindTooltip(
                 `<div>
-                     Enchente — Xambioá
+                     Enchente — Xambioá (Em atenção)
                  </div>`,
                 {
   "sticky": true,
@@ -278,33 +331,47 @@
             );
         
     
-            var marker_38fb10b382a28f5ab7ee555ff84afc5b = L.marker(
+                marker_99e12a2a91dec800a66da415fe21f74c.setIcon(icon_9754f7dd54b9e7928cc215aa5da3a271);
+            
+    
+            var marker_d033833dd6497b68102f66ed8ec1b59e = L.marker(
                 [-5.88167395, -47.45884546],
                 {
 }
-            ).addTo(marker_cluster_c8240a3e40f73b4e3369b04677874bcf);
+            ).addTo(marker_cluster_626974411da9597567c8edc0089e8dc8);
         
     
-        var popup_ff0d158089648c6063bed3ca63bc53a0 = L.popup({
+            var icon_b3b41fbcc432bb8f3327d60d6d36a42f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b024ee434fb5fb19305de44cb5b9cef6 = L.popup({
   "maxWidth": 450,
 });
 
         
             
-                var html_4703347936d0ef4796e7ad38a6917527 = $(`<div id="html_4703347936d0ef4796e7ad38a6917527" style="width: 100.0%; height: 100.0%;">     <b>Alagamento</b><br>     <b>Município:</b> Maurilândia<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-03-04<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>           <b>Descrição:</b> Residência atingida.<br>     <b>Situação atual:</b> Normalizado<br>     <b>ID:</b> EVT-005     </div>`)[0];
-                popup_ff0d158089648c6063bed3ca63bc53a0.setContent(html_4703347936d0ef4796e7ad38a6917527);
+                var html_b49a07cfcb2d29f4ebab75e5f9f4d466 = $(`<div id="html_b49a07cfcb2d29f4ebab75e5f9f4d466" style="width: 100.0%; height: 100.0%;">     <b>Alagamento</b><br>     <b>Município:</b> Maurilândia<br>     <b>Local:</b>  (localidade a confirmar)<br>     <b>Data:</b> 2026-03-04<br>     <b>Severidade:</b> None<br>     <b>Rio:</b> None<br>     <b>Descrição:</b> Residência atingida.<br>     <b>Situação atual:</b> Em andamento<br>     <b>ID:</b> EVT-005     </div>`)[0];
+                popup_b024ee434fb5fb19305de44cb5b9cef6.setContent(html_b49a07cfcb2d29f4ebab75e5f9f4d466);
             
         
 
-        marker_38fb10b382a28f5ab7ee555ff84afc5b.bindPopup(popup_ff0d158089648c6063bed3ca63bc53a0)
+        marker_d033833dd6497b68102f66ed8ec1b59e.bindPopup(popup_b024ee434fb5fb19305de44cb5b9cef6)
         ;
 
         
     
     
-            marker_38fb10b382a28f5ab7ee555ff84afc5b.bindTooltip(
+            marker_d033833dd6497b68102f66ed8ec1b59e.bindTooltip(
                 `<div>
-                     Alagamento — Maurilândia
+                     Alagamento — Maurilândia (Em andamento)
                  </div>`,
                 {
   "sticky": true,
@@ -312,34 +379,37 @@
             );
         
     
-            marker_cluster_c8240a3e40f73b4e3369b04677874bcf.addTo(map_8b1137c9144ceb710d32b7f7b7d649b0);
+                marker_d033833dd6497b68102f66ed8ec1b59e.setIcon(icon_b3b41fbcc432bb8f3327d60d6d36a42f);
+            
+    
+            marker_cluster_626974411da9597567c8edc0089e8dc8.addTo(map_bbb70994bf9b39701b44bc45efec8214);
         
     
-            map_8b1137c9144ceb710d32b7f7b7d649b0.fitBounds(
+            map_bbb70994bf9b39701b44bc45efec8214.fitBounds(
                 [[-11.3253, -48.449345], [-5.88167395, -47.45884546]],
                 {}
             );
         
     
-            var layer_control_992e175bc71a4f294a77912033312297_layers = {
+            var layer_control_dfff152a4b7c0af461461902fbeb2f00_layers = {
                 base_layers : {
-                    "Ruas (OSM)" : tile_layer_8ed3511b0cb6265c2d9814864662397b,
-                    "Claro (Carto)" : tile_layer_5af45f43bf7506a6b26839bdc2f4da3a,
-                    "Sat\u00e9lite (Esri)" : tile_layer_3f44f82f77044c3e2a788b36140af0b7,
+                    "Ruas (OSM)" : tile_layer_ee665622990a5530d1b55b0759864556,
+                    "Claro (Carto)" : tile_layer_a5741ac2f49192a3cea9534ba3596575,
+                    "Sat\u00e9lite (Esri)" : tile_layer_f301efa8b03366a1f0beffb86625ab1f,
                 },
                 overlays :  {
-                    "Eventos" : marker_cluster_c8240a3e40f73b4e3369b04677874bcf,
+                    "Eventos" : marker_cluster_626974411da9597567c8edc0089e8dc8,
                 },
             };
-            let layer_control_992e175bc71a4f294a77912033312297 = L.control.layers(
-                layer_control_992e175bc71a4f294a77912033312297_layers.base_layers,
-                layer_control_992e175bc71a4f294a77912033312297_layers.overlays,
+            let layer_control_dfff152a4b7c0af461461902fbeb2f00 = L.control.layers(
+                layer_control_dfff152a4b7c0af461461902fbeb2f00_layers.base_layers,
+                layer_control_dfff152a4b7c0af461461902fbeb2f00_layers.overlays,
                 {
   "position": "topright",
   "collapsed": false,
   "autoZIndex": true,
 }
-            ).addTo(map_8b1137c9144ceb710d32b7f7b7d649b0);
+            ).addTo(map_bbb70994bf9b39701b44bc45efec8214);
 
         
 </script>
